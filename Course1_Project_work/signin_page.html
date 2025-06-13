@@ -13,21 +13,43 @@
                 <h1>Sign-In Page</h1>
             </div>
             <form>
-                <div class="form-body">
-                    <input type="Name" placeholder="Enter Your Name" class="field">
-                    <input type="Email" placeholder="Enter Your Email" class="field">
-                    <input type="psw" placeholder="Enter Your Password" class="field">
+                <div class="form-body" id="signinform">
+                    <p class="error" id="error-message">Invalid Credentials</p>
+                    <input type="Name" placeholder="Enter Your Name" class="field" id="n1">
+                    <input type="Email" placeholder="Enter Your Email" class="field" id="n2">
+                    <input type="psw" placeholder="Enter Your Password" class="field" id="n3">
                     <div class="options">
                         <input type="checkbox" class="remember">Remember Me<br>
                         <br>
                         <!-- <a href="#" class="forgot" style="color: red;">Forgot password</a> -->
                         <p style="color: red;">Forgot password <a href="#" style="color: blue;"><u>Click Here!</u></a></p>
                     </div>
-                    <button type="button" style="border-style: outset;" onclick="">Sign-In</button>
-                    <button type="button" style="border-style: outset;" onclick="">Sign-Up</button>
+                    <button id="signin">
+                    <a href="gpt.html" type="button">Sign-In</a>
+                    <!-- <button type="button" src="login_page.js" style="border-style: inset;">SignIn</button> -->
+                    <!-- <button type="submit" style="border-style: outset;">Sign-Up</button> -->
+                    </button>
+                    <button>
+                        <a type="button">Sign-Up</a>
+                    </button>
                 </div>
             </form>
         </div>
     </div>
 </body>
+<script>
+    document.getElementById('signinform').addEventListener('submit',((event)=>{
+        event.preventDefault();
+
+        let Name = document.getElementById("n1").value;
+        let Email = document.getElementById("n2").value;
+        let psw = document.getElementById("n3").value;
+        if(Name==="praveen" || Email==="praveen@gmail.com" && psw==="12345"){
+            document.getElementById("signin")
+        }else{
+            document.getElementById("error-message").style.display="block"
+            document.getElementById("error-message").style.color="red"
+        }
+    }));
+</script>
 </html>

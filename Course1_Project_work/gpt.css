@@ -6,10 +6,8 @@
 }
  body {
       font-family: Arial, sans-serif;
-      background-color: #fff9f2;
-      margin: 20px;
-      background-color: rgb(159, 228, 221);
-    }
+      background-image: url("pic_1.png")
+ }
     .container {
       display: flex;
       justify-content: space-around;
@@ -30,6 +28,7 @@
       border-right: 8px solid green;
       border-top: 8px solid green;
       border-bottom: 8px solid green;
+      background-image: url("blurr2.png");
       
     }
     .non-veg {
@@ -37,11 +36,47 @@
       border-right: 8px solid red;
       border-top: 8px solid red;
       border-bottom: 8px solid red;
+      background-image: url("blurr3.png");
+      
     }
     h2 {
       margin-top: 0;
+    }
+    h1 {
+      color: bisque;
     }
     ul {
       list-style: none;
       padding-left: 0;
     }
+    p{
+        text-align: justify;
+        margin-top: 5%;
+        margin-bottom: -20%;
+
+    }
+    img{
+        margin-right: 100%;
+    }
+    button{
+        margin-left: 50%;
+        margin-bottom: 15%;
+        margin-top: 5%;
+        padding: 2px 5px;
+        border: none;
+        outline: none;
+        width: 30%;
+        background-color: yellow;
+        color: black;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.2s all;
+    }
+    button:hover{
+    background-color: orange;
+}
+button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}

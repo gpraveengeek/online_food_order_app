@@ -5,6 +5,7 @@
   <title>Food Categories</title>
 </head>
 <link rel="stylesheet" href="gpt.css">
+<script src="login.js"></script>
 <body>
 
   <h1 style="text-align: center;"><u>Food Categories</u></h1>
@@ -13,12 +14,17 @@
     <!-- Veg Section -->
     <div class="category veg">
       <h2><u>Vegetarian Dishes</u></h2>
+      <br>
       <ul>
-        <li>Paneer Butter Masala</li>
+        <li><b>Paneer Butter Masala</b></li>
+        <p><img src="paneer.jpg" width="150px" height="150px"><b>Price: Rs.150</b></p>
         <button>Add to Cart</button><br>
-        <li>Vegetable Biryani</li>
+        <br>
+        <li><b>Vegetable Biryani</b></li>
+        <p><img src="vegbirayni.jpg" width="150px" height="150px"><b>Price: Rs.250</b></p>
         <button>Add to Cart</button><br>
-        <li>Aloo Gobi</li>
+        <li><b>Aloo Gobi</b></li>
+        <p><img src="aloogobi.jpg" width="150px" height="150px"><b>Price: Rs.100</b></p>
         <button>Add to Cart</button><br>
       </ul>
     </div>
@@ -26,15 +32,24 @@
     <!-- Non-Veg Section -->
     <div class="category non-veg">
       <h2><u>Non-Vegetarian Dishes</u></h2>
+      <br>
       <ul>
-        <li>Chicken Biryani</li>
+        <li><b>Chicken Biryani</b></li>
+        <p><img src="cbiryani.jpg" width="150px" height="150px"><b>Price: Rs.300</b></p>
+        <button><a onclick="Addtocart">Add to Cart</a></button><br>
+        <li><b>Mutton Biryani</b></li>
+        <p><img src="mbiryani.jpg" width="150px" height="150px"><b>Price: Rs.350</b></p>
         <button>Add to Cart</button><br>
-        <li>Mutton Biryani</li>
-        <button>Add to Cart</button><br>
-        <li>Fish Curry</li>
+        <li><b>Fish Curry</b></li>
+        <p><img src="fish1.webp" width="150px" height="150px"><b>Price: Rs.300</b></p>
         <button>Add to Cart</button><br>
       </ul>
     </div>
   </div>
 </body>
+<script>
+    function Addtocart(fooditem){
+
+    }
+</script>
 </html>
