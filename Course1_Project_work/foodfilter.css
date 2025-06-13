@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(135, 226, 217);
+}
+button{
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    width: 15%;
+    background-color: green;
+    color: black;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s all;
+    display: inline-block;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+.nonveg{
+    display: flex;
+    justify-content: center;
+}
