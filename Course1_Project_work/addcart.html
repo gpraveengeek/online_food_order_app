@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CART</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="addcart.css" />
+  </head>
+  <body>
+    <button class="toast" id="toast">Product Added</button>
+    <div class="left">
+      <img src="logo.png" width="30px" height="30px">
+      <span class="s1">Cart</span><br>
+      <input
+        type="text" placeholder="search products..." oninput="searchProducts()" id="search"/>
+      <div class="products" id="products"></div>
+    </div>
+    <div class="cart">
+      <span class="s2">Your Cart</span>
+      <div class="cart-c" id="cart-c"></div>
+      <p class="total" id="total">Total:₹0</p>
+      <p class="payment" id="paymentpage">Payment Page</p>
+    </div>
+    <script src="addcart.js"></script>
+  </body>
+</html>
